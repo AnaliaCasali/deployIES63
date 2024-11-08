@@ -1,5 +1,5 @@
 export const environment = {
    production: true,
-   apiUrl:'http://ies63_backend:8080/',
+   apiUrl:'http://149.50.145.229:8080/',
   userId:''
  };
