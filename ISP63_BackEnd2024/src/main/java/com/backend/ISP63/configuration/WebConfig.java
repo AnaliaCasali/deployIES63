@@ -22,6 +22,8 @@ public class WebConfig implements WebMvcConfigurer {
     @Override
     public void addCorsMappings(CorsRegistry registry) {
             registry.addMapping("/api/**")
+            
+                    .allowedOrigins("http://149.50.145.229:4200") // Ajusta esto al origen del frontend
                     .allowedOrigins("http://localhost:4200") // Ajusta esto al origen del frontend
                     .allowedOrigins("http://localhost:8080") // Ajusta esto al origen del frontend
                     .allowedMethods("GET", "POST", "PUT", "DELETE", "PATCH")
