@@ -16,7 +16,8 @@ FROM node:18-alpine as build
 WORKDIR /app
 COPY . .
 RUN npm install && npm ci
-RUN npm run build --configuration production
+RUN npm run ng build ISP63_FrontEnd2024 --configuration production
+
 
 # Serve Application using Nginx Server
 FROM nginx:alpine AS angular_app_prod
